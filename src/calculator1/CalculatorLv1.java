@@ -32,12 +32,12 @@ public class CalculatorLv1 {
             int secondNum = sc.nextInt();
             
             System.out.print("두 숫자를 연산할 사칙연산 기호를 입력하세요: ");
-            char operation = sc.next().charAt(0);
+            char operator = sc.next().charAt(0);
 
-            // 연산 결과값을 저장하는 변수인 result
+            // 연산 결과값을 저장하는 변수인 this.result
             int result = 0;
 
-            switch (operation) {
+            switch (operator) {
                 case '+':
                     result = firstNum + secondNum;
                     break;
@@ -60,7 +60,7 @@ public class CalculatorLv1 {
                     break;
 
                 default:
-                    System.out.println("입력하신 " + operation + "은 적절한 연산자 기호가 아닙니다!!!");
+                    System.out.println("입력하신 " + operator + "은 적절한 연산자 기호가 아닙니다!!!");
                     break;
             }
 
@@ -70,8 +70,10 @@ public class CalculatorLv1 {
             String answer = sc.next();
 
             /* 사용자가 exit를 입력하였다면, 계산을 멈추기 위해 while 문을 탈출한다. */
-            if (answer.equals("exit"))
+            if (answer.equals("exit")) {
+                System.out.println("반복문을 종료합니다.");
                 break;
+            }
         }
     }
 }
