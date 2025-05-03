@@ -16,7 +16,7 @@ public class CalculatorLv1 {
             System.out.print("두 숫자를 연산할 사칙연산 기호를 입력하세요: ");
             char operator = sc.next().charAt(0);
 
-            // 연산 결과값을 저장하는 변수인 this.result
+            // 연산 결과값을 저장하는 변수인 result
             int result = 0;
 
             switch (operator) {
