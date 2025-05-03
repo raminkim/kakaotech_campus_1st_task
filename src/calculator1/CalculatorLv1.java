@@ -40,14 +40,17 @@ public class CalculatorLv1 {
             switch (operator) {
                 case '+':
                     result = firstNum + secondNum;
+                    System.out.println("연산 결과는 " + result + "입니다.");
                     break;
 
                 case '-':
                     result = firstNum - secondNum;
+                    System.out.println("연산 결과는 " + result + "입니다.");
                     break;
 
                 case '*':
                     result = firstNum * secondNum;
+                    System.out.println("연산 결과는 " + result + "입니다.");
                     break;
 
                 case '/':
@@ -57,14 +60,13 @@ public class CalculatorLv1 {
                     }
 
                     result = firstNum / secondNum;
+                    System.out.println("연산 결과는 " + result + "입니다.");
                     break;
 
                 default:
                     System.out.println("입력하신 " + operator + "은 적절한 연산자 기호가 아닙니다!!!");
                     break;
             }
-
-            System.out.println("연산 결과는 " + result + "입니다.");
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료)");
             String answer = sc.next();
