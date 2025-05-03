@@ -97,7 +97,7 @@ public class CalculatorLv2 {
                 System.out.println("삭제 이전의 resultList로 변경 후 resultList: " + cal.getResultList());
             } catch (InputMismatchException e) {
                 /* 예) 위 숫자 입력에 대해서 "ㄷ"으로 잘못 입력하는 경우,
-                       버퍼에 [ㄷ, \n] 상태이므로, finally의 sc.next()을 통해 잘못된 입력을 받아가는 것을 방지한다.
+                       버퍼에 [ㄷ, \n] 상태이므로, catch문의 sc.next()을 통해 잘못된 입력을 받아가는 것을 방지한다.
                 */
                 sc.next();
                 System.out.println("올바른 입력이 아닙니다. " + e);
